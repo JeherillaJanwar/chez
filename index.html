@@ -27,16 +27,14 @@
   
   
           <form  onsubmit="event.preventDefault(); load_pgn(); return false;">
-            <button onclick="reset();">Reset</button>
             <button onclick="undo();">Undo</button>
-            <button type="submit" id="loadpgn">Load pgn</button>
           </form>
           <textarea name="pgn" id="pgn" ></textarea>
        </div>
       </div>
       
     <div class="container connection ">
-      <h2>Connect via p2p</h2>
+      <h2>Play online?</h2>
       Your id is:
       <input id="myid" readonly />
       <button onclick="create();">generate</button>
