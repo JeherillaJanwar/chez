@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/Chess_kwt60.png" />
+    <title>Chess</title>
+  </head>
+  <body>
+    <audio class="click" src="sounds/click.wav" volume="0.1"></audio>
+    <audio class="clouch" src="sounds/clouch.wav" volume="0.1"></audio>
+    <audio class="woua" src="sounds/woua.wav" volume="0.1"></audio>
+    <audio class="gameover" src="sounds/gameover.wav" volume="0.1"></audio>
+
+    <div class="container">
+      <div class="chessboard "></div>
+      <h1 class="status">White to move</h1>
+    
+      <div class="container chatroom">
+        <form  onsubmit="event.preventDefault(); talk(); return false;">
+            <input type="input"  id="chat-input" ></input>
+            <button type="submit" id="send">Send</button>
+            
+          </form>
+          <textarea name="chat" id="chat" ></textarea>
+  
+  
+          <form  onsubmit="event.preventDefault(); load_pgn(); return false;">
+            <button onclick="reset();">Reset</button>
+            <button onclick="undo();">Undo</button>
+            <button type="submit" id="loadpgn">Load pgn</button>
+          </form>
+          <textarea name="pgn" id="pgn" ></textarea>
+       </div>
+      </div>
+      
+    <div class="container connection ">
+      <h2>Connect via p2p</h2>
+      Your id is:
+      <input id="myid" readonly />
+      <button onclick="create();">generate</button>
+      Connect to:
+      <input id="hisid" />
+      <button id="connect" onclick="join();">connect</button>
+
+      <h4 id="connection-status">Not Connected -> Generate id</h4>
+    </div>
+
+
+    <script src="libs/chess.js"></script>
+    <script src="main.js" ></script>
+
+    <style>
+      :root {
+        --black: #5d5656;
+        --white: #ebe2db;
+        --boardsize: 500px;
+      }
+      @media screen and (max-width: 480) {
+        :root{
+          --boardsize: 360px;;
+        
+        }
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        margin: 2px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
+      }
+   
+      .piece{
+        width:calc(var(--boardsize)/8);
+        height:calc(var(--boardsize)/8);
+        box-sizing: border-box;
+         border: none;
+      }
+      .selected-piece{
+        border: 2px blue solid;
+      }
+      .chessboard {
+        width: var(--boardsize);
+        height: var(--boardsize);
+        display: grid;
+        grid-template-columns: repeat(8, calc(var(--boardsize)/8));
+        grid-template-rows: repeat(8, calc(var(--boardsize)/8));
+        /*background-color: var(--white);*/
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      
+      button {
+        margin: 2px;
+        
+      }
+      form{
+        display:flex;
+        width:var(--boardsize);
+      }
+      
+      #chat{
+        width:var(--boardsize);
+          height: 50px;
+          margin:2px;
+      }
+      #pgn{
+        width:var(--boardsize);
+          height: 300px;
+          margin:2px;
+      }
+      input{
+        margin:0px;
+        flex:1;
+
+      }
+     
+      .hidden{
+        display: none;
+      }
+    </style>
+  </body>
+</html>

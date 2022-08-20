@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./Chess_files/Chess_kwt60.png">
+    <title>Chess</title>
+  </head>
+  <body>
+    <audio class="click" src="sounds/click.wav" volume="0.1"></audio>
+    <audio class="clouch" src="sounds/clouch.wav" volume="0.1"></audio>
+    <audio class="woua" src="sounds/woua.wav" volume="0.1"></audio>
+    <audio class="gameover" src="sounds/gameover.wav" volume="0.1"></audio>
+
+    <div class="container">
+      <div class="chessboard "><div id="a8" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_rbt60.png" alt="rb" draggable="true"></div><div id="b8" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_nbt60.png" alt="nb" draggable="true"></div><div id="c8" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_bbt60.png" alt="bb" draggable="true"></div><div id="d8" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_qbt60.png" alt="qb" draggable="true"></div><div id="e8" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_kbt60.png" alt="kb" draggable="true"></div><div id="f8" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_bbt60.png" alt="bb" draggable="true"></div><div id="g8" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_nbt60.png" alt="nb" draggable="true"></div><div id="h8" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_rbt60.png" alt="rb" draggable="true"></div><div id="a7" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="b7" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="c7" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="d7" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="e7" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="f7" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="g7" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="h7" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pbt60.png" alt="pb" draggable="true"></div><div id="a6" style="background-color: var(--white);"></div><div id="b6" style="background-color: var(--black);"></div><div id="c6" style="background-color: var(--white);"></div><div id="d6" style="background-color: var(--black);"></div><div id="e6" style="background-color: var(--white);"></div><div id="f6" style="background-color: var(--black);"></div><div id="g6" style="background-color: var(--white);"></div><div id="h6" style="background-color: var(--black);"></div><div id="a5" style="background-color: var(--black);"></div><div id="b5" style="background-color: var(--white);"></div><div id="c5" style="background-color: var(--black);"></div><div id="d5" style="background-color: var(--white);"></div><div id="e5" style="background-color: var(--black);"></div><div id="f5" style="background-color: var(--white);"></div><div id="g5" style="background-color: var(--black);"></div><div id="h5" style="background-color: var(--white);"></div><div id="a4" style="background-color: var(--white);"></div><div id="b4" style="background-color: var(--black);"></div><div id="c4" style="background-color: var(--white);"></div><div id="d4" style="background-color: var(--black);"></div><div id="e4" style="background-color: var(--white);"></div><div id="f4" style="background-color: var(--black);"></div><div id="g4" style="background-color: var(--white);"></div><div id="h4" style="background-color: var(--black);"></div><div id="a3" style="background-color: var(--black);"></div><div id="b3" style="background-color: var(--white);"></div><div id="c3" style="background-color: var(--black);"></div><div id="d3" style="background-color: var(--white);"></div><div id="e3" style="background-color: var(--black);"></div><div id="f3" style="background-color: var(--white);"></div><div id="g3" style="background-color: var(--black);"></div><div id="h3" style="background-color: var(--white);"></div><div id="a2" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="b2" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="c2" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="d2" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="e2" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="f2" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="g2" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="h2" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_pwt60.png" alt="pw" draggable="true"></div><div id="a1" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_rwt60.png" alt="rw" draggable="true"></div><div id="b1" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_nwt60.png" alt="nw" draggable="true"></div><div id="c1" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_bwt60.png" alt="bw" draggable="true"></div><div id="d1" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_qwt60.png" alt="qw" draggable="true"></div><div id="e1" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_kwt60.png" alt="kw" draggable="true"></div><div id="f1" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_bwt60.png" alt="bw" draggable="true"></div><div id="g1" style="background-color: var(--black);"><img class="piece" src="./Chess_files/Chess_nwt60.png" alt="nw" draggable="true"></div><div id="h1" style="background-color: var(--white);"><img class="piece" src="./Chess_files/Chess_rwt60.png" alt="rw" draggable="true"></div></div>
+      <h1 class="status">White to move</h1>
+    </div>
+
+    <div class="container connection ">
+      Your id is:
+      <input id="myid" readonly="">
+      <button onclick="create();">generate</button>
+      Connect to:
+      <input id="hisid">
+      <button id="connect" onclick="join();">connect</button>
+
+      <h4 id="connection-status">Not Connected -&gt; Generate id</h4>
+    </div>
+
+    <div class="container chatroom">
+        <form onsubmit="talk(event);">
+            <input type="input" id="chat-input">
+            <button type="submit" id="send">Send</button>
+        </form>
+      <textarea name="chat" id="chat" readonly=""></textarea>
+    </div>
+
+    <script src="./Chess_files/chess.js.download"></script>
+    <script src="./Chess_files/main.js.download" async=""></script>
+
+    <style>
+      :root {
+        --black: #5d5656;
+        --white: #ebe2db;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        margin: 2px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+
+      .chessboard {
+        display: inline-block;
+
+        width: 480px;
+        height: 480px;
+        display: grid;
+        grid-template-columns: repeat(8, 60px);
+        grid-template-rows: repeat(8, 60px);
+        /*background-color: var(--white);*/
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      }
+      #send {
+        margin: 5px;
+        width:50px;
+      }
+      #chat{
+          width:480px;
+          height: 300px;
+          margin:2px;
+      }
+      #chat-input{
+        width:420px;
+        margin:5px;
+
+      }
+      .hidden{
+        display: none;
+      }
+    </style>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
